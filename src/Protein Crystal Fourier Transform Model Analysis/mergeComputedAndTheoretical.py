@@ -1,4 +1,3 @@
-
 f1 = open("computedValues.txt", "r")
 f2 = open("theoreticalValues.txt", "r")
 f3 = open(r"merge.txt", 'w')

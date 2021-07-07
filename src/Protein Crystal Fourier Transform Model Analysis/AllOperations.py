@@ -12,6 +12,5 @@ def runScripts(fileName):
     f2.write(str(R_Value) + '\n')
 
 f2 = open(r"R_Values.txt", 'w')
-#for i in range(96):
-#runScripts(("A" + str(i+1) + ".pdb"))
+runScripts(("A" + str(i+1) + ".pdb"))
 runScripts("BAdded.txt")

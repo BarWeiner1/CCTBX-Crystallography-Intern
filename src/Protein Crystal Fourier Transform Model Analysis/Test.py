@@ -9,4 +9,3 @@ def find_nth_overlapping(haystack, needle, n):
     return start
 z="ATOM      1  N   THR A 868       2.865 -10.740  34.328  1.00"
 print(find_nth_overlapping(z, '.', 58))
-#print(y)

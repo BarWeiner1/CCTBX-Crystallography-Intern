@@ -29,15 +29,15 @@ fft_map.as_xplor_map(
   gridding_first=(0, 0, 0),
   gridding_last=fft_map.n_real())
 # we can compute another map
-#map_coeffs = fmodel.electron_density_map(
-#).map_coefficients(map_type = "2mFobs-DFmodel")
+map_coeffs = fmodel.electron_density_map(
+).map_coefficients(map_type = "2mFobs-DFmodel")
 # output it as MTZ file
-#mtz_dataset = map_coeffs.as_mtz_dataset(column_root_label="2mFoDFc")
-#mtz_object = mtz_dataset.mtz_object()
-#mtz_object.write(file_name = "amap.mtz")
+mtz_dataset = map_coeffs.as_mtz_dataset(column_root_label="2mFoDFc")
+mtz_object = mtz_dataset.mtz_object()
+mtz_object.write(file_name = "amap.mtz")
 # and get actual map values
-#fft_map = map_coeffs.fft_map(resolution_factor=0.25)
-#fft_map.apply_volume_scaling()
-#map_data = fft_map.real_map_unpadded()
-#for i in map_data:
- # print(i)
+fft_map = map_coeffs.fft_map(resolution_factor=0.25)
+fft_map.apply_volume_scaling()
+map_data = fft_map.real_map_unpadded()
+for i in map_data:
+  print(i)

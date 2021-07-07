@@ -18,4 +18,3 @@ for line1 in lines:
             String = String[2:String.find(',')-1] + " " + String[String.find(',')+4:String.find(')')-4]
             f3.write((String) + '\n')
             break
-    #f2.seek(0)

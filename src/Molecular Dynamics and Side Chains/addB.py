@@ -29,11 +29,8 @@ for i in range(len(lines2)):
     if(findValue(lines2[i])):
         index = findIndex(lines2[i])
         lines2[i] = lines2[i][0:find_nth_overlapping(lines2[i],'.', 4)+3] + " " + lines[index][find_nth_overlapping(lines[index],".",5)-2:find_nth_overlapping(lines[index],".",5)+3] + "           " + lines2[i][len(lines2[i])-2]
-#print(lines2)
-#deleteExtra()
 f3 = open("BAdded.txt", "w")
 for i in lines2:
     f3.write(str(i))
     f3.write('\n')
-#string = string +
 

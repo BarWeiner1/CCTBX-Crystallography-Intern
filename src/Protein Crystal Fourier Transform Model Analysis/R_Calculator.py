@@ -4,7 +4,7 @@ def calc_R():
     Sum=0
 
     for i in f1:
-        #print(float(i[0:i.find(".")+1]))
+        print(float(i[0:i.find(".")+1]))
         Sum = Sum + float(i[0:i.find(".")+1])
 
     f1.seek(0)
