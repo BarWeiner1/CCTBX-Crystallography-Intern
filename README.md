@@ -1,2 +1,2 @@
 # CCTBX-Crystallography-Intern
-Contains mapping scripts for internship
+I developed an implementation to accelerate the process of solving protein crystal structure using atomic coordinates from experimental X-ray diffraction experiments: determining their structure and electron locations using Discrete and Inverse Fourier Transforms of atomic density maps. I did this by initiating low-resolution maps, then iteratively smoothing them and comparing them to the initial model by computing their free R factors, and Cα-rmsd distance from the solution. Using Python and Computational Crystallography libraries, I presented a series of algorithms for crystal structure determination to triangulate solutions which most accurately fit the protein.
